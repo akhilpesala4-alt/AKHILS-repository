@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPortfolio — Personal Work & Creative Showcase</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">MyPortfolio<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <span class="hero-badge">Welcome to my showcase</span>
+      <h1 class="hero-title">Creative Designer & <span>Frontend Developer</span></h1>
+      <p class="hero-subtitle">I build interactive web experiences, modern digital products, and clean visual solutions.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hello! I'm a passionate creator dedicated to crafting meaningful web applications, user interfaces, and digital projects. I bridge the gap between design and technology to deliver engaging online experiences.</p>
+          <p>When I'm not coding or designing, I love exploring emerging technologies, contributing to creative projects, and constantly learning new techniques to refine my craft.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Completed Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="design">UI/UX Design</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="E-Commerce Dashboard">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web Development</span>
+            <h3>E-Commerce Dashboard</h3>
+            <p>An interactive sales analytics dashboard built with modern frontend frameworks.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Mobile Banking App UI">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">UI/UX Design</span>
+            <h3>Mobile Banking App UI</h3>
+            <p>A sleek, dark-themed mobile design focused on effortless financial tracking.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Creative Agency Web App">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Web Development</span>
+            <h3>Creative Agency Web App</h3>
+            <p>A responsive marketing website featuring dynamic animations and responsive layouts.</p>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills & Capabilities</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5 skill-icon"></i>
+          <h3>HTML5 / CSS3</h3>
+          <p>Semantic markup, responsive layouts, Flexbox & Grid</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-js skill-icon"></i>
+          <h3>JavaScript (ES6+)</h3>
+          <p>DOM manipulation, async programming, API integrations</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-react skill-icon"></i>
+          <h3>React / Frontend Frameworks</h3>
+          <p>Component architecture, state management, reusable UI</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-compass-drafting skill-icon"></i>
+          <h3>UI/UX & Design Systems</h3>
+          <p>Figma prototyping, design thinking, wireframing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+      
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 MyPortfolio. Built with HTML, CSS, & JS.</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
